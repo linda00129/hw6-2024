@@ -11,7 +11,6 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
     video.play();
-    // to fix
     vol=document.querySelector("#slider").value;
     document.querySelector("#volume").innerHTML=vol+"%";
 });
@@ -36,8 +35,8 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 // Skip Ahead
 document.querySelector("#skip").addEventListener("click", function() {
-    if(video.currentTime+15<video.duration){
-        video.currentTime+=15;
+    if(video.currentTime+10<video.duration){
+        video.currentTime+=10;
     }else{
         video.currentTime=0;
     }
